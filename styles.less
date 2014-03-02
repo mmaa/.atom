@@ -1,0 +1,59 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+.tab-bar {
+  height: 27px;
+  padding-left: 0;
+  box-shadow: none;
+  background: #d8d8d8;
+}
+
+.tab-bar .tab {
+  -webkit-transform: none;
+  border-radius: 0;
+  padding-left: 12px;
+  top: 0;
+  margin-left: 0;
+  border-top: none;
+  background: none;
+  box-shadow: none;
+  .close-icon { line-height: 24px; }
+}
+
+.tab-bar .tab.active {
+  height: 26px;
+  background: #ffffff;
+  .close-icon { line-height: 24px; }
+}
+
+.tab-bar .tab:first-child {
+  margin-left: 0;
+  padding-left: 12px;
+}
+
+.tab-bar .tab::before {
+  display: none;
+}
+
+.tab-bar:after {
+  height: 0px;
+  border-bottom: none;
+}
+
+.tab-bar .tab .title,
+.tab-bar .tab .close-icon {
+  -webkit-transform: none;
+}
+
+.tree-view {}
+
+.editor {}
+
+.editor .cursor {}

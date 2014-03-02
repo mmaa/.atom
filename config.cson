@@ -1,0 +1,30 @@
+'exception-reporting':
+  'userId': 'ccab2bda-f374-04be-c80b-2c5561769def'
+'release-notes':
+  'viewedVersion': '0.62.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': 'cfdf9a8d03c730f2399ee7e9bcedd56f396072a6'
+'editor':
+  'fontFamily': 'Menlo'
+  'fontSize': 13
+  'softWrap': true
+'core':
+  'themes': [
+    'atom-light-ui'
+    'fizzy'
+  ]
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.ssh'
+    '.DS_Store'
+  ]
+  'disabledPackages': [
+    'feedback'
+    'background-tips'
+  ]
+'tree-view':
+  'hideVcsIgnoredFiles': true
+  'hideIgnoredNames': true
