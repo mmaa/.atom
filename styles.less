@@ -1,3 +1,9 @@
+.tab-bar .tab,
+.tab-bar .tab .title,
+.tab-bar .tab .close-icon {
+  -webkit-transform: none;
+}
+
 .tab-bar {
   height: 27px;
   padding-left: 0;
@@ -6,7 +12,6 @@
 }
 
 .tab-bar .tab {
-  -webkit-transform: none;
   border-radius: 0;
   padding-left: 12px;
   top: 0;
@@ -14,13 +19,20 @@
   border-top: none;
   background: none;
   box-shadow: none;
-  .close-icon { line-height: 24px; }
 }
 
 .tab-bar .tab.active {
   height: 26px;
   background: #ffffff;
-  .close-icon { line-height: 24px; }
+}
+
+.tab-bar .tab,
+.tab-bar .tab.active,
+.tab-bar .tab.modified,
+.tab-bar .tab.active.modified {
+  .close-icon {
+    line-height: 24px;
+  }
 }
 
 .tab-bar .tab:first-child {
@@ -35,11 +47,6 @@
 .tab-bar:after {
   height: 0px;
   border-bottom: none;
-}
-
-.tab-bar .tab .title,
-.tab-bar .tab .close-icon {
-  -webkit-transform: none;
 }
 
 .editor {
