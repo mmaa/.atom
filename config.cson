@@ -1,15 +1,15 @@
 'exception-reporting':
   'userId': 'ccab2bda-f374-04be-c80b-2c5561769def'
 'release-notes':
-  'viewedVersion': '0.62.0'
+  'viewedVersion': '0.67.0'
 'welcome':
   'showOnStartup': false
 'metrics':
   'userId': 'cfdf9a8d03c730f2399ee7e9bcedd56f396072a6'
 'editor':
   'fontFamily': 'Menlo'
-  'fontSize': 13
   'softWrap': true
+  'fontSize': 13
 'core':
   'themes': [
     'atom-light-ui'
@@ -28,3 +28,5 @@
 'tree-view':
   'hideVcsIgnoredFiles': true
   'hideIgnoredNames': true
+'whitespace':
+  'ignoreWhitespaceOnCurrentLine': false
