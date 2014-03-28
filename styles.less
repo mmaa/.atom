@@ -1,3 +1,5 @@
+@tab_bar_height: 25px;
+
 .tab-bar .tab,
 .tab-bar .tab .title,
 .tab-bar .tab .close-icon {
@@ -5,10 +7,16 @@
 }
 
 .tab-bar {
-  height: 27px;
+  height: @tab_bar_height;
   padding-left: 0;
   box-shadow: none;
   background: #d8d8d8;
+}
+
+.tab-bar .tab,
+.tab-bar .tab.active {
+  height: @tab_bar_height - 1;
+  line-height: @tab_bar_height - 2;
 }
 
 .tab-bar .tab {
@@ -22,8 +30,7 @@
 }
 
 .tab-bar .tab.active {
-  height: 26px;
-  background: #ffffff;
+  background: #f4f4f4;
 }
 
 .tab-bar .tab,
@@ -31,8 +38,12 @@
 .tab-bar .tab.modified,
 .tab-bar .tab.active.modified {
   .close-icon {
-    line-height: 24px;
+    line-height: @tab_bar_height - 3;
   }
+}
+
+.tab-bar .tab.modified:not(:hover) .close-icon {
+  top: 8px;
 }
 
 .tab-bar .tab:first-child {
@@ -49,6 +60,16 @@
   border-bottom: none;
 }
 
+.tab-bar .tab.active .title { top: 0px; }
+
 .editor {
   .comment { font-style: italic; }
+
+  .entity.name.class,
+  .entity.other.inherited-class {
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .gutter { background-color: rgba(0, 0, 0, 0.04); } // for Atom Light theme
 }

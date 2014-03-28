@@ -1,7 +1,7 @@
 'exception-reporting':
   'userId': 'ccab2bda-f374-04be-c80b-2c5561769def'
 'release-notes':
-  'viewedVersion': '0.67.0'
+  'viewedVersion': '0.80.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -10,10 +10,12 @@
   'fontFamily': 'Menlo'
   'softWrap': true
   'fontSize': 13
+  'lineHeight': 1.4
+  'showIndentGuide': true
 'core':
   'themes': [
     'atom-light-ui'
-    'fizzy'
+    'atom-light-syntax'
   ]
   'ignoredNames': [
     '.git'
@@ -25,8 +27,16 @@
     'feedback'
     'background-tips'
   ]
+  'excludeVcsIgnoredPaths': false
 'tree-view':
   'hideVcsIgnoredFiles': true
   'hideIgnoredNames': true
 'whitespace':
   'ignoreWhitespaceOnCurrentLine': false
+'spell-check':
+  'grammars': [
+    'source.gfm'
+    'text.git-commit'
+    'text.plain'
+    'text.plain.null-grammar'
+  ]
