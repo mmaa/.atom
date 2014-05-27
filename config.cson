@@ -1,7 +1,5 @@
 'exception-reporting':
   'userId': 'ccab2bda-f374-04be-c80b-2c5561769def'
-'release-notes':
-  'viewedVersion': '0.92.0'
 'welcome':
   'showOnStartup': false
 'metrics':
@@ -9,9 +7,9 @@
 'editor':
   'fontFamily': 'Menlo'
   'softWrap': true
-  'fontSize': 11
   'lineHeight': 1.4
   'showIndentGuide': true
+  'fontSize': 11
 'core':
   'themes': [
     'atom-light-ui'
